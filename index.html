@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#15213e">
+  <meta name="description" content="Cours interactif d'analyse économique : macroéconomie. Neuf chapitres, formules, exemples, simulations et lexique.">
+  <title>Macro Atlas | Analyse économique · Macroéconomie</title>
+  <link rel="stylesheet" href="style.css">
+  <script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']],packages:{'[+]':['ams']}},svg:{fontCache:'global'},startup:{typeset:false}};</script>
+  <script defer src="lib/tex-svg.js"></script>
+  <script defer src="data/chapter-1.js"></script>
+  <script defer src="data/chapter-2.js"></script>
+  <script defer src="data/chapter-3.js"></script>
+  <script defer src="data/chapter-4.js"></script>
+  <script defer src="data/chapter-5.js"></script>
+  <script defer src="data/chapter-6.js"></script>
+  <script defer src="data/chapter-7.js"></script>
+  <script defer src="data/chapter-8.js"></script>
+  <script defer src="data/chapter-9.js"></script>
+  <script defer src="data/glossary.js"></script>
+  <script defer src="graphs.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Navigation dans le cours">
+      <div class="brand" tabindex="0" role="button" data-go="home">
+        <span class="brand-symbol"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M7 29V11h5v18M17 29V18h5v11M27 29V7h5v22" stroke="currentColor" stroke-width="3" stroke-linecap="round" fill="none"/><path d="M4 32h32" stroke="currentColor" stroke-width="2"/></svg></span>
+        <span><strong>MACRO<span class="brand-accent">ATLAS</span></strong><small>HEC · Analyse économique</small></span>
+      </div>
+      <nav class="chapter-rail" id="chapter-rail" aria-label="Accès rapide aux chapitres"></nav>
+      <div class="sidebar-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="nav-search" type="search" placeholder="Chercher un point..." aria-label="Rechercher dans le cours"><span class="shortcut">/</span></div>
+      <div class="sidebar-label">NAVIGATION</div>
+      <button type="button" class="side-home" data-go="home"><span class="nav-icon">⌂</span>Vue d'ensemble</button>
+      <div class="sidebar-label with-gap nav-heading"><span>LES 9 CHAPITRES</span><button id="fold-all" class="fold-all" type="button" aria-label="Replier tous les chapitres">Tout replier</button></div>
+      <nav id="chapter-nav" class="chapter-nav" aria-label="Chapitres et sous-points"></nav>
+      <details class="sidebar-tools">
+        <summary><span>OUTILS D'ÉTUDE</span><span class="tools-arrow" aria-hidden="true">⌄</span></summary>
+        <div class="sidebar-tools-content">
+          <button type="button" class="side-home" data-go="graphs"><span class="nav-icon">⌁</span>Laboratoire de graphiques</button>
+          <button type="button" class="side-home" data-go="glossary"><span class="nav-icon">ƒ</span>Lexique des variables</button>
+          <button type="button" class="side-home" data-go="review"><span class="nav-icon">✓</span>Révisions & progression</button>
+        </div>
+      </details>
+      <div class="sidebar-footer"><div class="progress-label"><span>Progression</span><span id="side-progress-val">0 %</span></div><div class="progress-track"><span id="side-progress-bar"></span></div><small>Suivi enregistré dans ce navigateur.</small></div>
+    </aside>
+    <div id="sidebar-overlay" class="sidebar-overlay" data-close-sidebar="true"></div>
+    <div class="site-column">
+      <header class="topbar">
+        <div class="topbar-left"><button class="icon-btn desktop-sidebar-toggle" type="button" id="toggle-sidebar" aria-controls="sidebar" aria-expanded="true" title="Réduire la navigation" aria-label="Réduire la navigation"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M9 4v16"/><path class="toggle-indicator" d="m15 9-3 3 3 3"/></svg></button><button class="icon-btn menu-btn" id="open-menu" aria-label="Ouvrir le menu">☰</button><div class="breadcrumb" id="breadcrumb">Cours <span>/</span> Vue d'ensemble</div></div>
+        <div class="topbar-right"><span class="edition">Cours interactif · 2026</span><button class="icon-btn" id="theme-btn" title="Changer le thème" aria-label="Changer le thème">◐</button></div>
+      </header>
+      <main id="main" tabindex="-1" aria-live="polite"></main>
+      <footer class="site-footer"><span>MACRO ATLAS</span><span>Created by Tahin</span></footer>
+    </div>
+  </div>
+</body>
+</html>
